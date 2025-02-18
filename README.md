@@ -1,19 +1,21 @@
 WeatherEmailScraper:
-Esse projeto é um script em Python que utiliza Selenium para coletar informações de previsão do tempo de um site e depois envia essas informações como um e-mail em formato HTML. Ele faz scraping da página, obtém dados como temperatura e previsão para os próximos dias, e utiliza Jinja2 para gerar o conteúdo do e-mail. Finalmente, o e-mail é enviado através do servidor SMTP do Gmail.
 
-Funcionalidades:
+This project is a Python script that uses Selenium to collect weather forecast information from a website and then sends that information as an HTML email. It scrapes the page, gathers data such as the current temperature and forecast for the next few days, and uses Jinja2 to generate the email content. Finally, the email is sent through Gmail's SMTP server.
 
-•	Obtenção de dados Utiliza Selenium para cessar o site do tempo.com, inserir a cidade e extrair temperatura atual, condição do tempo e previsão para os próximos 3 dias.
-•	Envio por E-mail: Formata os dados obtidos em um e-mail HTML e envia para um destinatário configurado. – Agendamento: Utiliza a biblioteca schedule para agendar a execução diária do script.
+Features:
 
-Requisitos:
+• Data Retrieval: Uses Selenium to access the tempo.com website, input the city, and extract current temperature, weather condition, and the forecast for the next 3 days.
+• Email Sending: Formats the obtained data into an HTML email and sends it to a configured recipient.
+• Scheduling: Uses the schedule library to schedule the daily execution of the script.
 
-Python 3x Bibliotecas Python necessárias: selenium, webdriver_manager, schedule, smtplib, email, dotenv Conta de e-mail Gmail para envio.
+Requirements:
 
-Configuração: 
+Python 3x
+Necessary Python Libraries: selenium, webdriver_manager, schedule, smtplib, email, dotenv
+Gmail email account for sending.
+Setup:
 
-•	Instale as dependências necessárias: pip install selenium webdriver_manager schedule
-•	Execute o script para testar o envio de e-mails: python app.py
+• Install the necessary dependencies: pip install selenium webdriver_manager schedule
+• Run the script to test email sending: python app.py
 
-Notas: 
-Certifique-se de que o Chrome WebDriver está instalado e configurado corretamente.       
+Notes: Ensure that the Chrome WebDriver is installed and configured correctly.     
